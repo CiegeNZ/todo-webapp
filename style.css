@@ -3,15 +3,31 @@ html {
 }
 
 .todo-item {
-  background: linear-gradient(121deg, rgb(13, 9, 85) 0%, rgba(79,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(121deg, rgb(58, 54, 131) 0%, rgb(123, 43, 170) 35%, rgba(0,212,255,1) 100%);
   background-size: 300% 300%;
   animation: gradient-scroll 20s ease infinite;
+  color: #DDD;
   width: fit-content;
   height: fit-content;
   padding: 20px;
   border-radius: 15%;
   border: 2px ridge #e0dddd;
   box-shadow: 5px 10px 20px #242323;
+}
+
+.todo-item:hover {
+  animation-name: bob-on-hover-float, gradient-scroll;
+  animation-duration: .8s, 20s;
+  animation-delay: 0s, 0s;
+  animation-timing-function: ease, ease;
+  animation-iteration-count: infinite, infinite;
+  animation-direction: alternate, normal;
+}
+
+@keyframes bob-on-hover-float {
+  100% {
+    transform: translateY(4px);
+  }
 }
 
 @keyframes gradient-scroll {
