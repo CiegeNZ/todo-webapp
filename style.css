@@ -1,12 +1,26 @@
-.todo-item {
-background-color: aquamarine;
-width: fit-content;
-height: fit-content;
-padding: 20px;
-border-radius: 15%;
+html {
+  background-color: aliceblue;
 }
 
-button {
+.todo-item {
+  background: linear-gradient(121deg, rgb(13, 9, 85) 0%, rgba(79,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  background-size: 300% 300%;
+  animation: gradient-scroll 20s ease infinite;
+  width: fit-content;
+  height: fit-content;
+  padding: 20px;
+  border-radius: 15%;
+  border: 2px ridge #e0dddd;
+  box-shadow: 5px 10px 20px #242323;
+}
+
+@keyframes gradient-scroll {
+  0%{background-position:0% 13%}
+  50%{background-position:100% 88%}
+  100%{background-position:0% 13%}
+}
+
+.todo-button {
   padding: 12px 24px;
   background-color: hsl(222, 100%, 95%);
   color: hsl(243, 80%, 62%);
@@ -16,12 +30,12 @@ button {
   z-index: 1;
 }
 
-button span{
+.todo-button span{
   z-index: 1;
   position: relative;
 }
 
-button::before {
+.todo-button::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -31,16 +45,23 @@ button::before {
   border-radius: 50%;
   transform: translate3d(-50%,-50%,0) scale3d(0,0,0);
   transition: opacity .4s cubic-bezier(.19,1,.22,1),transform .75s cubic-bezier(.19,1,.22,1);
-  background-color: hsl(243, 80%, 62%);
   opacity: 0;
 }
 
-button:hover span{
+.todo-button:hover span{
   color: hsl(222, 100%, 95%);
 }
 
-button:hover::before {
+.todo-button:hover::before {
   opacity: 1;
   transition-duration: .85s;
   transform: translate3d(-50%,-50%,0) scale3d(1,1,1)
+}
+
+.button-delete::before {
+  background-color: hsl(0, 65%, 51%);
+}
+
+.button-complete::before {
+  background-color: hsl(152, 53%, 45%);
 }
