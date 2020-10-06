@@ -1,6 +1,6 @@
 **TODO Webapp**
 
-Just a small cookie or file based todo app, hosted through Git Pages at Ciegenz.github.io/todo-webapp which redirects to my domain Codebits.ml/todo-webapp
+Just a small cookie or file based todo app, hosted through [Git Pages](Ciegenz.github.io/todo-webapp) which redirects to my site [Codebits](codebits.ml/todo-webapp)
 
 **Goals/Ideas**
 * Works without internet
