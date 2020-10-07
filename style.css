@@ -1,9 +1,10 @@
 html {
   background-color: aliceblue;
+  font-family: 'Cousine', monospace;
 }
 
 .todo-item {
-  background: linear-gradient(121deg, rgb(58, 54, 131) 0%, rgb(123, 43, 170) 35%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(121deg, rgb(58, 54, 131) 0%, rgb(123, 43, 170) 35%, rgb(12, 47, 100) 100%);
   background-size: 300% 300%;
   animation: gradient-scroll 20s ease infinite;
   color: #DDD;

@@ -5,33 +5,16 @@
   <head>
     <title>Basic TODO:</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cousine&display=swap" rel="stylesheet">
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </head>
   <body>
-    <!-- Create a header navigation or similar-->
-
-      <!-- Create script to create an item on button click-->
-      <div class="todo-item">
-        <div class="item-head" contenteditable="true">
-          <h1>Title Here</h1>
-        </div>
-        <div class="item-main">
-          <div class="item-date">
-            <h4>Date/Time</h4>
-          </div>
-          <div class="item-desc" contenteditable="true">
-            <p>This is the description</p>
-          </div>
-        </div>
-        <div class="item-foot">
-          <button class="todo-button button-delete"><span>Delete</span></button>
-          <button class="todo-button button-complete"><span>Complete</span>
-          </button>
-        </div>
+   
+      <div id="holder">
+        <todoitem></todoitem>
       </div>
-      
-
 
   </body>
-  <!-- Create script to save/load items-->
-
+  <script src="todoVue.js"></script>
 </HTML>
